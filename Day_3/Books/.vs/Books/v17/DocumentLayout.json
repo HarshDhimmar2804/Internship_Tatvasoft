@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\Books\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|c:\\users\\hp\\source\\repos\\books\\books\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|solutionrelative:books\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|c:\\users\\hp\\source\\repos\\books\\books\\services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|solutionrelative:books\\services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|c:\\users\\hp\\source\\repos\\books\\books\\books.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|solutionrelative:books\\books.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|c:\\users\\hp\\source\\repos\\books\\books\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963A5438-6083-436E-B428-615720615986}|Books\\Books.csproj|solutionrelative:books\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Books",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Books.csproj",
+              "RelativeDocumentMoniker": "Books\\Books.csproj",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Books.csproj",
+              "RelativeToolTip": "Books\\Books.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-23T16:16:24.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Books\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Books\\Controllers\\BooksController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T08:02:33.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BooksService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Services\\BooksService.cs",
+              "RelativeDocumentMoniker": "Books\\Services\\BooksService.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Services\\BooksService.cs",
+              "RelativeToolTip": "Books\\Services\\BooksService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T07:54:02.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Books.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Models\\Books.cs",
+              "RelativeDocumentMoniker": "Books\\Models\\Books.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Books\\Books\\Models\\Books.cs",
+              "RelativeToolTip": "Books\\Models\\Books.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T07:50:03.474Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

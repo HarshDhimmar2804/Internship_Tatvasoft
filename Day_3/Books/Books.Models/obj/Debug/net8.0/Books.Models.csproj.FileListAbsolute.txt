@@ -1,0 +1,4 @@
+C:\Users\HP\source\repos\Books\Books.Models\obj\Debug\net8.0\Books.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Books\Books.Models\obj\Debug\net8.0\Books.Models.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Books\Books.Models\obj\Debug\net8.0\Books.Models.AssemblyInfo.cs
+C:\Users\HP\source\repos\Books\Books.Models\obj\Debug\net8.0\Books.Models.csproj.CoreCompileInputs.cache

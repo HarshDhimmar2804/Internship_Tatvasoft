@@ -16,3 +16,9 @@
 
 <h2>Day 5: Understand Authentication and Authorization</h2>
 <p>Explore authentication and authorization concepts and implementation in the project.</p>
+
+<h2>Day 6: Role based Authorization (Admin and User roles)</h2>
+<p>Hands on authentication concepts, Role-Based Access Control, and Access Control Lists (ACLs).</p>
+
+<h2>Day 7: User Retrieval</h2>
+<p>Data retrieval using joins in the LINQ Query, Sorting, filtering and paging.</p>

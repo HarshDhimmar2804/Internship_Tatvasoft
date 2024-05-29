@@ -1,0 +1,4 @@
+C:\Users\rajan\source\repos\books\Books.Services\obj\Debug\net8.0\Books.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rajan\source\repos\books\Books.Services\obj\Debug\net8.0\Books.Services.AssemblyInfoInputs.cache
+C:\Users\rajan\source\repos\books\Books.Services\obj\Debug\net8.0\Books.Services.AssemblyInfo.cs
+C:\Users\rajan\source\repos\books\Books.Services\obj\Debug\net8.0\Books.Services.csproj.CoreCompileInputs.cache

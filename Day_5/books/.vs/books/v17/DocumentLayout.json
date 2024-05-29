@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rajan\\source\\repos\\books\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|c:\\users\\rajan\\source\\repos\\books\\books\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|solutionrelative:books\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|c:\\users\\rajan\\source\\repos\\books\\books\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|solutionrelative:books\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|c:\\users\\rajan\\source\\repos\\books\\books\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|solutionrelative:books\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|c:\\users\\rajan\\source\\repos\\books\\books\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{641F8500-510C-4B87-8ADD-1BEBB90D9746}|books\\books.csproj|solutionrelative:books\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\rajan\\source\\repos\\books\\dataaccesslayer\\services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\services\\booksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\rajan\\source\\repos\\books\\dataaccesslayer\\repository\\entities\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repository\\entities\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\rajan\\source\\repos\\books\\dataaccesslayer\\repository\\userinfodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repository\\userinfodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\rajan\\source\\repos\\books\\dataaccesslayer\\repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\rajan\\source\\repos\\books\\dataaccesslayer\\repository\\userlogindb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repository\\userlogindb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\rajan\\source\\repos\\books\\dataaccesslayer\\repository\\entities\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF8D7A8-87D4-4B66-920E-91DA0E6DF9E6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repository\\entities\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Books.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\Entities\\Books.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repository\\Entities\\Books.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\Entities\\Books.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repository\\Entities\\Books.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T08:45:06.571Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\books\\appsettings.json",
+              "RelativeDocumentMoniker": "books\\appsettings.json",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\books\\appsettings.json",
+              "RelativeToolTip": "books\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T10:21:21.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\books\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "books\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\books\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "books\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAkwFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T09:19:56.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserInfodb.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\UserInfodb.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repository\\UserInfodb.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\UserInfodb.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repository\\UserInfodb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:37:04.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserInfo.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\Entities\\UserInfo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repository\\Entities\\UserInfo.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\Entities\\UserInfo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repository\\Entities\\UserInfo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:24:34.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Userlogindb.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\Userlogindb.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repository\\Userlogindb.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\Userlogindb.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repository\\Userlogindb.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T08:34:49.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repository\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Repository\\AppDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repository\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T08:41:17.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\books\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "books\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\books\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "books\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T05:02:09.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BooksService.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Services\\BooksService.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Services\\BooksService.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\DataAccessLayer\\Services\\BooksService.cs",
+              "RelativeToolTip": "DataAccessLayer\\Services\\BooksService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T06:25:38.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rajan\\source\\repos\\books\\books\\Program.cs",
+              "RelativeDocumentMoniker": "books\\Program.cs",
+              "ToolTip": "C:\\Users\\rajan\\source\\repos\\books\\books\\Program.cs",
+              "RelativeToolTip": "books\\Program.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAABoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T06:18:59.043Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

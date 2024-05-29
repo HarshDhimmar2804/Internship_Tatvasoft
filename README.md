@@ -1,3 +1,5 @@
+<h1>Tatvasoft_Internship</h1>
+
 <h2>Day 1: Introduction to PostgreSQL</h2>
 <p>Learn basics of SQL, set up PostgreSQL database, and Database Schema CI platform.</p>
 

@@ -70,7 +70,7 @@ export class AddUserComponent implements OnInit {
             //this.toastr.success(data.data);
             this.toast.success({detail:"SUCCESS",summary:data.data,duration:3000});
             setTimeout(() => {
-              this.router.navigate(['userPage']);
+              this.router.navigate(['admin/userPage']);
             }, 1000);
           }
           else

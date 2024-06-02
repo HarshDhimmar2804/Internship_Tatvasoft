@@ -1,6 +1,7 @@
 .login {
   min-height: 100vh;
   padding-top: 200px;
+  margin-left: -50px;
 }
 
 .bg-image {
@@ -9,7 +10,7 @@
 }
 
 .col-form-label{
-  width: 201px;
+  width: 200px;
   height: 14px;
   margin: 0 36px 12px 0;
   font-size: 18px;
@@ -19,7 +20,7 @@
 }
 
 .form-control{
-  width: 401px;
+  width: 400px;
   height: 56px;
   /* margin: 12px 0 27px;
   padding: 20px 186px 19px 15px; */
@@ -30,7 +31,7 @@
 }
 
 .btn-login {
-  width: 401px;
+  width: 400px;
   height: 48px;
   border-radius: 24px;
   border: solid 2px #f88634;
@@ -82,8 +83,6 @@
   text-align: left;
   color: #fff;
 }
-
-
 
 .ForgotContent{
   width: 389px;

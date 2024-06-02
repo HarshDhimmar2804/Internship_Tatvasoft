@@ -69,20 +69,18 @@ export class MissionComponent implements OnInit {
 
   DeleteMissionData(){
     this.service.DeleteMission(this.missionId).subscribe((data:any)=>{
-        if(data.result == 1)
-        {
-          //this.toastr.success(data.data);
-          this.toast.success({detail:"SUCCESS",summary:data.data,duration:3000});
-          setTimeout(() => {
-            this.deleteModal.hide();
+      if(data.result == 1) {
+        //this.toastr.success(data.data);
+        this.toast.success({detail:"SUCCESS",summary:data.data,duration:3000});
+        setTimeout(() => {
+          this.deleteModal.hide();
           window.location.reload();
-          }, 1000);
-        }
-        else
-        {
-          //this.toastr.error(data.message);
-          this.toast.error({detail:"ERORR",summary:data.message,duration:3000});
-        }
-      },err=>this.toast.error({detail:"ERROR",summary:err.message,duration:3000}));
+        }, 1000);
+      } else {
+        //this.toastr.error(data.message);
+        this.toast.error({detail:"ERROR",summary:data.message,duration:3000});
+      }
+    }, err=>this.toast.error({detail:"ERROR",summary:err.message,duration:3000}));
   }
+  
 }

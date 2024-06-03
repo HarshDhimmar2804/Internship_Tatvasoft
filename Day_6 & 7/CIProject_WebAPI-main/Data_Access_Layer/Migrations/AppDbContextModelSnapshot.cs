@@ -22,6 +22,43 @@ namespace Data_Access_Layer.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Data_Access_Layer.Repository.Entities.City", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CityName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("CountryId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("City");
+                });
+
+            modelBuilder.Entity("Data_Access_Layer.Repository.Entities.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CountryName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Country");
+                });
+
             modelBuilder.Entity("Data_Access_Layer.Repository.Entities.MissionSkill", b =>
                 {
                     b.Property<int>("Id")
@@ -80,6 +117,83 @@ namespace Data_Access_Layer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MissionTheme");
+                });
+
+            modelBuilder.Entity("Data_Access_Layer.Repository.Entities.Missions", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CityId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("CountryId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("date");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("MissionAvilability")
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionDescription")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionDocuments")
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionImages")
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionOrganisationDetail")
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionOrganisationName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionSkillId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionThemeId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionTitle")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionType")
+                        .HasColumnType("text");
+
+                    b.Property<string>("MissionVideoUrl")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("RegistrationDeadLine")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("date");
+
+                    b.Property<int?>("TotalSheets")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Missions");
                 });
 
             modelBuilder.Entity("Data_Access_Layer.Repository.Entities.User", b =>

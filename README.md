@@ -22,3 +22,15 @@
 
 <h2>Day 7: User Retrieval</h2>
 <p>Data retrieval using joins in the LINQ Query, Sorting, filtering and paging.</p>
+
+<h2>Day 8: User CRUD</h2>
+<p>Begin CRUD operations on the mission table (Retrieve and Insert).</p>
+<p>Continue CRUD operations on mission records (Update and Delete).</p>
+
+<h2>Day 9: Mission CRUD and Theme CRUD</h2>
+<p>Begin CRUD operations on the mission theme table (Retrieve and Insert). </p>
+<p>Continue CRUD operations on mission theme records (Update and Delete).</p>
+
+<h2>Day 10: Mission Skill CRUD</h2>
+<p>Begin CRUD operations on the mission Skill table (Retrieve and Insert).</p>
+<p>Continued CRUD operations on mission Skill records (Update and Delete).</p>

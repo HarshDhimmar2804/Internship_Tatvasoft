@@ -8,8 +8,6 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Migrations;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -65,7 +63,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
-
+app.UseStaticFiles();
 app.UseCors("MyPolicy");
 
 app.UseAuthentication();
@@ -86,7 +84,3 @@ app.Run();
 //INSERT INTO public."UserDetail"(
 //    "Id", "UserId", "Name", "Surname", "EmployeeId", "Manager", "Title", "Department", "MyProfile", "WhyIVolunteer", "CountryId", "CityId", "Avilability", "LinkdInUrl", "MySkills", "UserImage", "Status", "CreatedDate", "ModifiedDate", "IsDeleted")
 //    VALUES(1, 2, 'Nisarg', 'Gami', 1, 'Manager', 'Demo', 'IT', 'abc', 'xyz', 4, 27, 'Standards Availability', '', '', '', true, CURRENT_DATE, CURRENT_DATE, '0');
-
-
-//add - migration "FirstMigration"
-//update - database

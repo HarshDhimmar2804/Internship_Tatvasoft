@@ -1,7 +1,6 @@
 ﻿using Data_Access_Layer;
 using Data_Access_Layer.Common;
 using Data_Access_Layer.Repository.Entities;
-using System.Reflection;
 
 namespace Business_logic_Layer
 {
@@ -39,6 +38,11 @@ namespace Business_logic_Layer
         public string DeleteMission(int id)
         {
             return _dalMission.DeleteMission(id);
+        }
+
+        public List<Missions> ClientSideMissionList(int userid)
+        {
+            return _dalMission.ClientSideMissionList(userid);
         }
     }
 }

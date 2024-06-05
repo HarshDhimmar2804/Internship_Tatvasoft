@@ -5,7 +5,6 @@ using Data_Access_Layer.Repository.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
-using System.Reflection;
 
 namespace Web_API.Controllers
 {

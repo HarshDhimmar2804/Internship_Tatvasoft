@@ -68,10 +68,12 @@ export class MissionComponent implements OnInit {
   }
 
   DeleteMissionData(){
-    this.service.DeleteMission(this.missionId).subscribe((data:any)=>{
+    this.service.DeleteMission(this.missionId).subscribe(
+      (data:any)=>{
       if(data.result == 1) {
         //this.toastr.success(data.data);
         this.toast.success({detail:"SUCCESS",summary:data.data,duration:3000});
+        this.CloseRemoveMissionModal();
         setTimeout(() => {
           this.deleteModal.hide();
           window.location.reload();

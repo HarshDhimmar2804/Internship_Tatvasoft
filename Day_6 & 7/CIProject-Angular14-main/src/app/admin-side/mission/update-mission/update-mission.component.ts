@@ -48,7 +48,7 @@ export class UpdateMissionComponent implements OnInit {
           missionSkillId: ['', Validators.compose([Validators.required])],
           missionImages: [''],
       });
-      if (this.missionId != 0) {
+      if (this.missionId != null) {
           this.FetchDetail(this.missionId);
       }
    }

@@ -9,7 +9,7 @@
   <div class="col-sm-4 detail">
       <img src="{{userImage}}" onerror="this.src='assets/NoUser.png'" alt="NoImage" class="userImage" (click)="userImg.click()" style="cursor: pointer;">
       <input type="file" #userImg style="display: none;" (change)="OnSelectImage($event)" formControlName="userImage">
-      <!-- <span class="text-danger" *ngIf="userProfileForm.controls['userImage'].dirty && userProfileForm.hasError('required','userImage')">Please Select UserImage</span> -->
+      <span class="text-danger" *ngIf="userProfileForm.controls['userImage'].dirty && userProfileForm.hasError('required','userImage')">Please Select UserImage</span>
       <p class="userName">{{loginName}}</p>
       <p class="changepassword" (click)="OpenChangePasswordModal()">Change Password</p>
   </div>

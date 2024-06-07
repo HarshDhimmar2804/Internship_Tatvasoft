@@ -114,37 +114,33 @@ namespace Web_API.Controllers
         [HttpPost]
         [Route("UpdateMission")]
         [Authorize]
-        public ResponseResult UpdateMission(Missions mission)
+        public async Task<ActionResult<ResponseResult>> UpdateMissionTheme(Missions mission)
         {
             try
             {
-                result.Data = _balMission.UpdateMission(mission);
-                result.Result = ResponseStatus.Success;
+                var result = await _balMission.UpdateMissionAsync(mission);
+                return Ok(new ResponseResult { Data = result, Result = ResponseStatus.Success });
             }
             catch (Exception ex)
             {
-                result.Result = ResponseStatus.Error;
-                result.Message = ex.Message;
+                return StatusCode(500, new ResponseResult { Result = ResponseStatus.Error, Message = ex.Message });
             }
-            return result;
         }
 
         [HttpDelete]
         [Route("DeleteMission/{id}")]
         [Authorize]
-        public ResponseResult DeleteMission(int id)
+        public async Task<ActionResult<ResponseResult>> DeleteMission(int id)
         {
             try
             {
-                result.Data = _balMission.DeleteMission(id);
-                result.Result = ResponseStatus.Success;
+                var result = await _balMission.DeleteMissionAsync(id);
+                return Ok(new ResponseResult { Data = result, Result = ResponseStatus.Success });
             }
             catch (Exception ex)
             {
-                result.Result = ResponseStatus.Error;
-                result.Message = ex.Message;
+                return StatusCode(500, new ResponseResult { Result = ResponseStatus.Error, Message = ex.Message });
             }
-            return result;
         }
 
         [HttpPost]
@@ -179,6 +175,63 @@ namespace Web_API.Controllers
                 }
             }
             return Ok(new { success = true, Data = fullPath });
+        }
+
+        #endregion
+
+        #region MissionApplication
+
+        [HttpGet]
+        [Route("MissionApplicationList")]
+        [Authorize]
+        public ResponseResult MissionApplicationList()
+        {
+            try
+            {
+                result.Data = _balMission.MissionApplicationList();
+                result.Result = ResponseStatus.Success;
+            }
+            catch (Exception ex)
+            {
+                result.Result = ResponseStatus.Error;
+                result.Message = ex.Message;
+            }
+            return result;
+        }
+
+        [HttpPost]
+        [Route("MissionApplicationDelete")]
+        [Authorize]
+        public ResponseResult MissionApplicationDelete(MissionApplication missionApplication)
+        {
+            try
+            {
+                result.Data = _balMission.MissionApplicationDelete(missionApplication.Id);
+                result.Result = ResponseStatus.Success;
+            }
+            catch (Exception ex)
+            {
+                result.Result = ResponseStatus.Error;
+                result.Message = ex.Message;
+            }
+            return result;
+        }
+        [HttpPost]
+        [Route("MissionApplicationApprove")]
+        [Authorize]
+        public ResponseResult MissionApplicationApprove(MissionApplication missionApplication)
+        {
+            try
+            {
+                result.Data = _balMission.MissionApplicationApprove(missionApplication.Id);
+                result.Result = ResponseStatus.Success;
+            }
+            catch (Exception ex)
+            {
+                result.Result = ResponseStatus.Error;
+                result.Message = ex.Message;
+            }
+            return result;
         }
 
         #endregion

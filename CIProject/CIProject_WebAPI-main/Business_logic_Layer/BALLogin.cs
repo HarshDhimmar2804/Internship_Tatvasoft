@@ -33,16 +33,16 @@ namespace Business_logic_Layer
         {
             try
             {
-                User userObj= new User();
+                User userObj = new User();
                 userObj = UserLogin(loginRequest);
 
-                if(userObj != null)
+                if (userObj != null)
                 {
-                    if(userObj.Message.ToString() == "Login Successfully")
+                    if (userObj.Message.ToString() == "Login Successfully")
                     {
                         result.Message = userObj.Message;
                         result.Result = ResponseStatus.Success;
-                        result.Data = _jwtService.GenerateToken(userObj.Id.ToString(), userObj.FirstName, userObj.LastName, userObj.PhoneNumber, userObj.EmailAddress,userObj.UserType,userObj.UserImage);
+                        result.Data = _jwtService.GenerateToken(userObj.Id.ToString(), userObj.FirstName, userObj.LastName, userObj.PhoneNumber, userObj.EmailAddress, userObj.UserType, userObj.UserImage);
                     }
                     else
                     {
@@ -62,7 +62,7 @@ namespace Business_logic_Layer
             }
             return result;
         }
-        public User  UserLogin(LoginRequest loginRequest)
+        public User UserLogin(LoginRequest loginRequest)
         {
             User userOb = new User()
             {
@@ -71,6 +71,21 @@ namespace Business_logic_Layer
             };
 
             return _dalLogin.LoginUser(userOb);
+        }
+
+        public User LoginUserDetailById(int userId)
+        {
+            return _dalLogin.LoginUserDetailById(userId);
+        }
+
+        public UserDetail GetUserProfileDetailById(int userId)
+        {
+            return _dalLogin.GetUserProfileDetailById(userId);
+        }
+
+        public string LoginUserProfileUpdate(UserDetail userDetail)
+        {
+            return _dalLogin.LoginUserProfileUpdate(userDetail);
         }
     }
 }

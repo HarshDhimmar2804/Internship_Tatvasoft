@@ -12,7 +12,7 @@
                 <div>
                   <div class="row">
                     <div class="col-sm-6">
-                        <label class="col-form-label">Country</label>
+                        <label class="col-form-label">Country<span style="color: red;">*</span></label>
                         <select class="form-select" (change)="CityList($event)" formControlName="countryId">
                           <option *ngFor="let item of countryList" value="{{item.value}}">  {{item.text}}</option>
                         </select>
@@ -21,7 +21,7 @@
                         </span>
                     </div>
                     <div class="col-sm-6">
-                      <label class="col-form-label">City</label>
+                      <label class="col-form-label">City<span style="color: red;">*</span></label>
                       <select class="form-select" formControlName="cityId">
                         <option value="">Select City</option>
                         <option *ngFor="let item of cityList" value="{{item.value}}">{{item.text}}</option>
@@ -33,14 +33,14 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <label class="col-form-label">Mission Title</label>
+                      <label class="col-form-label">Mission Title<span style="color: red;">*</span></label>
                       <input type="text" class="form-control" formControlName="missionTitle" placeholder="Enter mission title">
                       <span class="text-danger" *ngIf="missionTitle.invalid && (missionTitle.touched || formValid)">
                         Please Enter Mission Title
                       </span>
                     </div>
                     <div class="col-sm-6">
-                      <label class="col-form-label">Mission Theme</label>
+                      <label class="col-form-label">Mission Theme<span style="color: red;">*</span></label>
                       <select class="form-select" formControlName="missionThemeId">
                         <option *ngFor="let item of missionThemeList" value="{{item.value}}">{{item.text}}</option>
                       </select>
@@ -51,20 +51,20 @@
                   </div>
                    <div class="row">
                     <div class="col-sm-6">
-                      <label class="col-form-label">Mission Description</label>
+                      <label class="col-form-label">Mission Description<span style="color: red;">*</span></label>
                       <textarea class="form-control" row="3" placeholder="Enter your message" formControlName="missionDescription"></textarea>
                       <span class="text-danger" *ngIf="missionDescription.invalid && (missionDescription.touched || formValid)">
                         Please Enter Mission Description
                       </span>
                     </div>
                     <div class="col-sm-6">
-                      <label class="col-form-label">Total seats</label>
+                      <label class="col-form-label">Total seats<span style="color: red;">*</span></label>
                       <input type="number" class="form-control" placeholder="Enter total seets" formControlName="totalSheets">
                     </div>
                    </div>
                    <div class="row">
                     <div class="col-sm-6">
-                        <label class="col-form-label">Start Date</label>
+                        <label class="col-form-label">Start Date<span style="color: red;">*</span></label>
                         <input type="date" placeholder="Select Start Date" formControlName="startDate" class="form-control"
                         [min]="addMissionForm.controls['startDate'].value" [disabled]="endDateDisabled">
                         <span class="text-danger" *ngIf="startDate.invalid && (startDate.touched || formValid)">
@@ -72,7 +72,7 @@
                         </span>
                     </div>
                     <div class="col-sm-6">
-                        <label class="col-form-label">End Date</label>
+                        <label class="col-form-label">End Date<span style="color: red;">*</span></label>
                         <input type="date" placeholder="Select End Date" formControlName="endDate" class="form-control"
                                [min]="addMissionForm.controls['startDate'].value" [disabled]="endDateDisabled">
                         <span class="text-danger" *ngIf="endDate.invalid && (endDate.touched || formValid)">
@@ -82,7 +82,7 @@
                 </div>
                     <div class="row">
                       <div class="col-sm-6">
-                        <label class="col-form-label">Mission Images</label>
+                        <label class="col-form-label">Mission Images<span style="color: red;">*</span></label>
                         <div class="dropZone">
                               <div class="text-wrapper">
                                 <div style="text-align: center;">
@@ -96,7 +96,7 @@
                         </span>
                       </div>
                       <div class="col-sm-6">
-                        <label class="col-form-label">Mission Skills</label>
+                        <label class="col-form-label">Mission Skills<span style="color: red;">*</span></label>
                         <select class="form-select skills" formControlName="missionSkillId" multiple="multiple">
                           <option *ngFor="let item of missionSkillList" value="{{item.value}}">{{item.text}}</option>
                         </select>
@@ -108,7 +108,7 @@
                     <div class="row">
                       <div class="col-sm-1 pt-2" *ngFor="let items of imageListArray">
                         <img src="{{items}}" style="width:95px;max-width: 95px important;height:95px;max-height: 95px !important;" onerror="this.src='assets/NoImg.png'" alt="" class="img-thumbnail position-relative">
-                        <!-- <span style="position:relative;"><button class="btn btnremove btn-outline-secondary" (click)="OnRemoveImage(items)">x</button></span> -->
+                        <span style="position:relative;"><button class="btn btnremove btn-outline-secondary" (click)="OnRemoveImages(items)">x</button></span>
                       </div>
                     </div>
                 </div>

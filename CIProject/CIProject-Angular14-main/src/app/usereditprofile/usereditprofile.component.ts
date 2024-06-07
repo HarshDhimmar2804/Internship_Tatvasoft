@@ -42,10 +42,10 @@ export class UsereditprofileComponent implements OnInit {
   contactUsForm:any;
   constructor(public service:ClientService,private loginService:AdminloginService,private router:Router,private toast:NgToastService,public fb:FormBuilder,public activateRouter:ActivatedRoute,public toastr:ToastrService) {
       this.userId = this.activateRouter.snapshot.paramMap.get('userId');
-      // if(this.userId != 0)
-      // {
-      //   this.FetchData(this.userId);
-      // }
+      if(this.userId != 0)
+      {
+        this.FetchData(this.userId);
+      }
 
   }
   public data: string[] = [ 'Anthropology','Archeology','Astronomy','Computer Science','Environmental Science','History','Library Sciences','Mathematics','Music Theory',
@@ -127,7 +127,7 @@ export class UsereditprofileComponent implements OnInit {
     },err=>this.toast.error({detail:"ERROR",summary:err.message}));
   }
   GetUserSkill(){
-    this.service.GetUserSkill(this.loginUserId).subscribe((data:any)=>{debugger;
+    this.service.GetUserSkill(this.loginUserId).subscribe((data:any)=>{
       if(data.result == 1)
       {
         if(data.data.length > 0){
@@ -148,7 +148,7 @@ export class UsereditprofileComponent implements OnInit {
 
   CountryList(){
     this.service.CountryList().subscribe((data:any)=>{
-      if(data.result == 1)
+      if(data.result == 'Success')
       {
           this.countryList = data.data;
       }
@@ -161,7 +161,7 @@ export class UsereditprofileComponent implements OnInit {
   CityList(countryId:any){
   countryId = countryId.target.value;
   this.service.CityList(countryId).subscribe((data:any)=>{
-    if(data.result == 1)
+    if(data.result == 'Success')
     {
         this.cityList = data.data;
     }
@@ -256,26 +256,26 @@ export class UsereditprofileComponent implements OnInit {
                   this.userImage = this.service.imageUrl + '/' + this.editData.userImage
                 }
               }
-              // else
-              // {
-              //   this.userProfileForm = this.fb.group({
-              //     name:[this.firstName,Validators.compose([Validators.required])],
-              //     surname:[this.lastName,Validators.compose([Validators.required])],
-              //     employeeId:[''],
-              //     manager:[''],
-              //     title:[''],
-              //     department:[''],
-              //     myProfile:[null,Validators.compose([Validators.required])],
-              //     whyIVolunteer:[''],
-              //     countryId:[null,Validators.compose([Validators.required])],
-              //     cityId:[null,Validators.compose([Validators.required])],
-              //     avilability:[''],
-              //     linkdInUrl:[''],
-              //     mySkills:['',Validators.compose([Validators.required])],
-              //     userImage:[null,Validators.compose([Validators.required])],
-              //     userId:['']
-              //   })
-              // }
+              else
+              {
+                this.userProfileForm = this.fb.group({
+                  name:[this.firstName,Validators.compose([Validators.required])],
+                  surname:[this.lastName,Validators.compose([Validators.required])],
+                  employeeId:[''],
+                  manager:[''],
+                  title:[''],
+                  department:[''],
+                  myProfile:[null,Validators.compose([Validators.required])],
+                  whyIVolunteer:[''],
+                  countryId:[null,Validators.compose([Validators.required])],
+                  cityId:[null,Validators.compose([Validators.required])],
+                  avilability:[''],
+                  linkdInUrl:[''],
+                  mySkills:['',Validators.compose([Validators.required])],
+                  userImage:[null,Validators.compose([Validators.required])],
+                  userId:['']
+                })
+              }
             }
             else
             {

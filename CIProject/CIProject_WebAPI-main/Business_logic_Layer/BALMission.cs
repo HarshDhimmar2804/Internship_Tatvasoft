@@ -31,18 +31,37 @@ namespace Business_logic_Layer
         {
             return _dalMission.MissionDetailById(id);
         }
-        public string UpdateMission(Missions mission)
+        public async Task<string> UpdateMissionAsync(Missions mission)
         {
-            return _dalMission.UpdateMission(mission);
+            return await _dalMission.UpdateMissionAsync(mission);
         }
-        public string DeleteMission(int id)
+        public async Task<string> DeleteMissionAsync(int id)
         {
-            return _dalMission.DeleteMission(id);
+            return await _dalMission.DeleteMissionAsync(id);
+        }
+
+        public string ApplyMission(MissionApplication missionApplication)
+        {
+            return _dalMission.ApplyMission(missionApplication);
         }
 
         public List<Missions> ClientSideMissionList(int userid)
         {
             return _dalMission.ClientSideMissionList(userid);
+        }
+
+        public List<MissionApplication> MissionApplicationList()
+        {
+            return _dalMission.MissionApplicationList();
+        }
+
+        public string MissionApplicationDelete(int id)
+        {
+            return _dalMission.MissionApplicationDelete(id);
+        }
+        public string MissionApplicationApprove(int id)
+        {
+            return _dalMission.MissionApplicationApprove(id);
         }
     }
 }

@@ -75,12 +75,12 @@ app.Run();
 
 //INSERT INTO public."User"(
 //    "Id", "FirstName", "LastName", "PhoneNumber", "EmailAddress", "UserType", "Password", "CreatedDate", "ModifiedDate", "IsDeleted")
-//    VALUES(1, 'Nisarg', 'Gami', '9999999999', 'nisarg@tatvasoft.com', 'admin', 'nisarg@123', CURRENT_DATE, CURRENT_DATE, '0');
+//    VALUES(1, 'Harsh', 'Dhimmar', '9999999999', 'harsh@gmail.com', 'admin', 'harsh@123', CURRENT_DATE, CURRENT_DATE, '0');
 
 //INSERT INTO public."User"(
 //    "Id", "FirstName", "LastName", "PhoneNumber", "EmailAddress", "UserType", "Password", "CreatedDate", "ModifiedDate", "IsDeleted")
-//    VALUES(2, 'Nisarg', 'Gami', '9999999999', 'ngtestuser@tatvasoft.com', 'user', 'nisarg@123', CURRENT_DATE, CURRENT_DATE, '0');
+//    VALUES(2, 'Harsh', 'Dhimmar', '9999999999', 'harsh@gmail.com', 'user', 'harsh@123', CURRENT_DATE, CURRENT_DATE, '0');
 
 //INSERT INTO public."UserDetail"(
 //    "Id", "UserId", "Name", "Surname", "EmployeeId", "Manager", "Title", "Department", "MyProfile", "WhyIVolunteer", "CountryId", "CityId", "Avilability", "LinkdInUrl", "MySkills", "UserImage", "Status", "CreatedDate", "ModifiedDate", "IsDeleted")
-//    VALUES(1, 2, 'Nisarg', 'Gami', 1, 'Manager', 'Demo', 'IT', 'abc', 'xyz', 4, 27, 'Standards Availability', '', '', '', true, CURRENT_DATE, CURRENT_DATE, '0');
+//    VALUES(1, 2, 'Harsh', 'Dhimmar', 1, 'Manager', 'Demo', 'IT', 'abc', 'xyz', 4, 27, 'Standards Availability', '', '', '', true, CURRENT_DATE, CURRENT_DATE, '0');

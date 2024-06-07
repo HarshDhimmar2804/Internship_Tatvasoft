@@ -1,4 +1,5 @@
-﻿using Data_Access_Layer.Repository;
+﻿using Data_Access_Layer.Migrations;
+using Data_Access_Layer.Repository;
 using Data_Access_Layer.Repository.Entities;
 using System.Data;
 
@@ -82,7 +83,7 @@ namespace Data_Access_Layer
                     };
                     var newUserDetail = new UserDetail
                     {
-                        Id= userDetailID,
+                        Id = userDetailID,
                         UserId = userID,
                         FirstName = user.FirstName,
                         LastName = user.LastName,
@@ -172,50 +173,171 @@ namespace Data_Access_Layer
             User userObj = new User();
             try
             {
-                    var query = from u in _cIDbContext.User
-                                where u.EmailAddress == user.EmailAddress && u.IsDeleted == false
-                                select new
-                                {
-                                    u.Id,
-                                    u.FirstName,
-                                    u.LastName,
-                                    u.PhoneNumber,
-                                    u.EmailAddress,
-                                    u.UserType,
-                                    u.Password,
-                                    UserImage = u.UserImage
-                                };
+                var query = from u in _cIDbContext.User
+                            where u.EmailAddress == user.EmailAddress && u.IsDeleted == false
+                            select new
+                            {
+                                u.Id,
+                                u.FirstName,
+                                u.LastName,
+                                u.PhoneNumber,
+                                u.EmailAddress,
+                                u.UserType,
+                                u.Password,
+                                UserImage = u.UserImage
+                            };
 
-                    var userData = query.FirstOrDefault();
+                var userData = query.FirstOrDefault();
 
-                    if (userData != null)
+                if (userData != null)
+                {
+                    if (userData.Password == user.Password)
                     {
-                        if (userData.Password == user.Password)
-                        {
-                            userObj.Id = userData.Id;
-                            userObj.FirstName = userData.FirstName;
-                            userObj.LastName = userData.LastName;
-                            userObj.PhoneNumber = userData.PhoneNumber;
-                            userObj.EmailAddress = userData.EmailAddress;
-                            userObj.UserType = userData.UserType;
-                            userObj.UserImage = userData.UserImage;
-                            userObj.Message = "Login Successfully";
-                        }
-                        else
-                        {
-                            userObj.Message = "Incorrect Password.";
-                        }
+                        userObj.Id = userData.Id;
+                        userObj.FirstName = userData.FirstName;
+                        userObj.LastName = userData.LastName;
+                        userObj.PhoneNumber = userData.PhoneNumber;
+                        userObj.EmailAddress = userData.EmailAddress;
+                        userObj.UserType = userData.UserType;
+                        userObj.UserImage = userData.UserImage;
+                        userObj.Message = "Login Successfully";
                     }
                     else
                     {
-                        userObj.Message = "Email Address Not Found.";
+                        userObj.Message = "Incorrect Password.";
                     }
+                }
+                else
+                {
+                    userObj.Message = "Email Address Not Found.";
+                }
             }
             catch (Exception ex)
             {
                 throw ex;
             }
             return userObj;
+        }
+
+        public User LoginUserDetailById(int userId)
+        {
+            try
+            {
+                User user = new User();
+                // Retrieve the user by ID
+                user = _cIDbContext.User.FirstOrDefault(u => u.Id == userId && !u.IsDeleted);
+
+                if (user != null)
+                {
+                    return user;
+                }
+                else
+                {
+                    throw new Exception("User not found.");
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public UserDetail GetUserProfileDetailById(int userId)
+        {
+            try
+            {
+                var userDetails = (from u in _cIDbContext.User
+                                   join ud in _cIDbContext.UserDetail on u.Id equals ud.UserId into UserDetailGroup
+                                   from userdetail in UserDetailGroup.DefaultIfEmpty()
+                                   where !u.IsDeleted && !userdetail.IsDeleted && u.UserType == "user" && userdetail.UserId == userId
+                                   select new UserDetail
+                                   {
+                                       Id = u.Id,
+                                       FirstName = u.FirstName,
+                                       LastName = u.LastName,
+                                       PhoneNumber = u.PhoneNumber,
+                                       EmailAddress = u.EmailAddress,
+                                       UserType = u.UserType,
+                                       UserId = userdetail.Id,
+                                       Name = userdetail.Name,
+                                       Surname = userdetail.Surname,
+                                       EmployeeId = userdetail.EmployeeId,
+                                       Department = userdetail.Department,
+                                       Title = userdetail.Title,
+                                       Manager = userdetail.Manager,
+                                       WhyIVolunteer = userdetail.WhyIVolunteer,
+                                       CountryId = userdetail.CountryId,
+                                       CityId = userdetail.CityId,
+                                       Avilability = userdetail.Avilability,
+                                       LinkdInUrl = userdetail.LinkdInUrl,
+                                       MySkills = userdetail.MySkills,
+                                       UserImage = userdetail.UserImage,
+                                       Status = userdetail.Status,
+                                   }).ToList().FirstOrDefault();
+
+                return userDetails;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public string LoginUserProfileUpdate(UserDetail userDetail)
+        {
+            string result = "";
+            try
+            {
+                // Begin transaction
+                using (var transaction = _cIDbContext.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        // Get the userdetails
+                        var existingUserDetail = _cIDbContext.UserDetail
+                            .FirstOrDefault(u => u.UserId == userDetail.UserId && u.IsDeleted == false);
+
+                        if (existingUserDetail != null)
+                        {
+                            // Update user detail
+
+                            result = "User Detail Updated Successfully!";
+                        }
+                        else
+                        {
+                            //Insert new user detail
+
+                            result = "User Detail Created Successfully!";
+                        }
+
+                        //Update First Name and Last Name in User Table
+                        var user = _cIDbContext.User
+                            .FirstOrDefault(u => u.Id == userDetail.UserId && u.IsDeleted == false);
+                        if (user != null)
+                        {
+                            //Update First and Last Name
+                            user.FirstName = userDetail.FirstName;
+                            user.LastName = userDetail.LastName;
+                        }
+
+                        _cIDbContext.SaveChanges();
+
+                        // Commit transaction
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Rollback transaction if an exception occurs
+                        transaction.Rollback();
+                        throw ex;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return result;
         }
     }
 }
